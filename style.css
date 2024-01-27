@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.navbar {
+    background-color: #343a40;
+    padding: 15px 0;
+}
+
+.navbar-brand,
+.navbar-nav a {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+/* Responsive Navigation Styles */
+@media (max-width: 768px) {
+    .navbar-collapse {
+        background-color: #343a40;
+    }
+
+    .navbar-toggler {
+        border-color: white;
+    }
+
+    .navbar-toggler-icon {
+        background-color: white;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #555;
+    }
+}
+
+/* Carousel Styles */
+#carouselExample {
+    margin-top: 20px;
+}
+
+/* Custom CSS section with flex div */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.flex-item {
+    text-align: center;
+    margin: 10px;
+}
+
+/* Photo Gallery Styles */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.1);
+}
+
+/* Card Section Styles */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.card {
+    width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+}
+
+
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #343a40;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+    background-color: #555;
+}
